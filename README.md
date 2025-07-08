@@ -2,7 +2,7 @@
 
 ### 고려대학교 최초의 데이터 사이언스 & 인공지능 학회
 
-</a>![홍보포스터](https://github.com/user-attachments/assets/956eea43-651e-4298-8a2f-9bd91b1041e9)
+</a>![홍보포스터](https://github.com/user-attachments/assets/315e431b-bc14-4a7f-befa-fe984813f08b)
 
 <br>
 
