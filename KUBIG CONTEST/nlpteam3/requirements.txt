@@ -1,0 +1,38 @@
+# PyTorch 2.1.0 + CUDA 11.8 호환 버전 (Python 3.10)
+# pip install torch==2.1.0+cu118 torchvision==0.16.0+cu118 torchaudio==2.1.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+
+# Transformers (transformers 4.44.0+ 권장)
+transformers==4.45.0
+tokenizers==0.20.1
+accelerate==0.26.0
+
+# Sentence Transformers (PyTorch 2.1 호환)
+sentence-transformers==3.3.1
+
+# Hugging Face Hub
+huggingface-hub==0.25.2
+safetensors==0.4.5
+
+# FAISS (CPU 버전)
+faiss-cpu==1.8.0
+
+# NumPy/SciPy
+numpy==1.24.0
+scipy==1.10.0
+pandas==2.0.0
+
+# 진행률 표시 및 유틸리티
+tqdm==4.66.0
+
+# JSON 처리
+orjson==3.9.10
+
+# LangChain Core
+LangChain
+langchain-community
+
+# LangSmith 추적
+langsmith
+
+# YAML (프롬프트/설정 관리)
+pyyaml>=6.0

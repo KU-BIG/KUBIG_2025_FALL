@@ -1,0 +1,46 @@
+# 토큰 및 생성 설정
+generation_config:
+  max_input_tokens: 8192        # 입력 토큰 최대 길이 (프롬프트 + 컨텍스트)
+  max_output_tokens: 512        # 출력 토큰 최대 길이
+  temperature: 0.1              # 생성 온도 (낮을수록 일관성 높음)
+  do_sample: true               # 샘플링 사용 여부
+  top_p: 0.9                    # nucleus sampling
+  repetition_penalty: 1.1       # 반복 방지
+
+# 컨텍스트 설정
+context_config:
+  max_context_length: 10000     # 컨텍스트 최대 문자 수
+  max_documents: 15             # 최대 문서 수
+  truncate_threshold: 1         # 문서 자르기 최소 길이 (이보다 작으면 잘라서 포함하지 않음)
+
+# 검색 설정
+search_config:
+  stage1_k: 5                   # 1단계 검색 문서 수
+  stage2_k: 50                  # 2단계 전체 후보 검색 수
+  stage3_target_k: 5            # 3단계 타겟 조항에서 선정할 문서 수
+  stage3_other_k: 5             # 3단계 기타 조항에서 선정할 문서 수
+  embedding_batch_size: 32      # 임베딩 배치 크기
+
+# 모델 설정
+model_config:
+  # 임베딩 모델
+  embedding_model_name: "nlpai-lab/KURE-v1"
+  embedding_model_dir: "models"
+  
+  # LLM 모델
+  llm_model_name: "rtzr/ko-gemma-2-9b-it"
+  llm_model_dir: "models"
+  
+  # 벡터스토어
+  vectorstore_dir: "db"
+  
+  # 모델 공통 설정
+  device: "cuda"              # GPU 사용
+  torch_dtype: "float16"      # GPU 메모리 효율성을 위해 float16 사용
+
+# Langsmith 설정
+langsmith_config:
+  LANGSMITH_PROJECT: "fsku"
+  LANGSMITH_API_KEY: "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" # expired
+  LANGSMITH_TRACING: "true"
+  LANGSMITH_ENDPOINT: "https://api.smith.langchain.com"
