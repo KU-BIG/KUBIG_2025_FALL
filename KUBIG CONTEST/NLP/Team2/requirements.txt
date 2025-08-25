@@ -1,0 +1,18 @@
+# 기본 데이터 처리
+pandas
+numpy
+scikit-learn
+
+# 자연어처리
+nltk
+transformers
+torch
+sentence-transformers
+bertopic
+
+# 시각화 & 대시보드
+streamlit
+plotly
+
+# 기타 유틸
+tqdm
