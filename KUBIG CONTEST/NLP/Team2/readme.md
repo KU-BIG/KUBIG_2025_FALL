@@ -1,4 +1,4 @@
-# ReviewToRevenue: NLI 기반 레스토랑 리뷰 인사이트 서비스
+# ReviewToRevenue: 리뷰 기반 레스토랑 리뷰 인사이트 서비스
 
 **Team ZeroSugar (NLP 2팀)**  
 21기 강서연, 윤채영 | 22기 김종현, 백서현  
