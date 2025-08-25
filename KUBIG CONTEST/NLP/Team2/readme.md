@@ -33,7 +33,8 @@
    - 모델: `cross-encoder/nli-deberta-v3-base`  
    - 36개 세부 토픽(aspect)과 문장 매칭  
    - Multi-label, sigmoid 기반 threshold=0.8 적용  
-   * 시도: BERTopic 기반 토픽 모델링 
+   
+   ** 시도: BERTopic 기반 토픽 모델링 
    - 임베딩: `all-MiniLM-L6-v2`  
    - UMAP → HDBSCAN → c-TF-IDF 기반 토픽 추출  
    - 비지도학습 한계를 보완하기 위해 NLI 지도학습과 병행  
