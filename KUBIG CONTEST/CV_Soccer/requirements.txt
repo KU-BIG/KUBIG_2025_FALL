@@ -1,0 +1,15 @@
+# requirements
+ffmpeg-python
+numpy
+tensorflow
+keras
+scipy
+resampy
+torch
+torchaudio
+torchvision
+torchvggish
+tqdm
+scikit-learn
+opencv-python
+matplotlib
