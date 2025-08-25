@@ -105,5 +105,5 @@ CV 3 team | 컴통이들 | 21기 김채은, 22기 김창현, 최민석, 황원�
 - 세 LoRA가 완전히 직교하지 않아 특정 조합에서 간섭 발생 가능
 - 정량 평가가 어려운 task 
 - 다중 LoRA를 DARE,TIE 등의 방식으로 보다 task-aware한 병합 가능
-- 다른LoRAmethod활용orPCA,t-SNE등으로 다양한정량분석기대
+- 다른 LoRA method 활용 or PCA,t-SNE 등으로 다양한 정량 분석 기대
 
