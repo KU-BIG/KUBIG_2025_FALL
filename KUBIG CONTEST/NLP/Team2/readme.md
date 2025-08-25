@@ -49,9 +49,9 @@
 
 ```
 NLPteam2/
-├─ app.py                  # Streamlit 대시보드 (감성 + 토픽)
+├─ app.py                  # BERTopic 토픽 모델링 기반 대시보드
 ├─ app_nli.py              # NLI 기반 분석 전용 대시보드
-├─ main_final.py           # 전체 파이프라인 실행 스크립트
+├─ main_final.py           # BERTopic 기반 분석석 실행 스크립트
 ├─ main_nli.py             # NLI 기반 분석 실행 스크립트
 ├─ config.py               # 데이터 경로 및 모델 설정
 ├─ modules/                # 기능 모듈
@@ -62,8 +62,7 @@ NLPteam2/
 │  └─ find_business_ids.py # business JSONL에서 ID 검색
 ├─ data/                   # 데이터셋 (사용자 제공 필수)
 │  └─ yelp data (business, reviews) ...
-├─ requirements.txt
-└─ setup.py
+└─ requirements.txt
 ```
 
 > ⚠️ **데이터는 반드시 `data/` 폴더에 넣어야 실행 가능.**
