@@ -30,3 +30,9 @@ DISPR 모델을 통해 생성된 3D 재구성 결과의 예시는 `./predictions
 DISPR 모델에 더하여 **Random Forest**를 사용한 적혈구 분류 과정을 추가하였습니다. 분류 정확도를 높이기 위해 다음 두 가지 방식을 모두 시도했습니다.
 - 2D image/mask feature 활용
 - DISPR의 3D object feature 활용
+```
+python compare_2d_3d.py \
+  --wide_csv dataset_csvs/rbc_unified_wide.csv\
+  --long_csv dataset_csvs/rbc_unified_long.csv \
+  --cv 5 --n_aug_per_sample 5 --minority_fraction 0.8
+```
