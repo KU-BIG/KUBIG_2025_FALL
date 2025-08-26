@@ -41,17 +41,17 @@ CLAP2Diffusion은 오디오와 텍스트를 입력받아 이미지를 생성하�
 
 | 오디오 | 텍스트 프롬프트 | 생성 이미지 |
 |--------|---------------|------------|
-| Thunder.wav | "thunderstorm at beach" | ![](assets/Thunder_beach.webp) |
-| Thunder.wav | "thunderstorm in city" | ![](assets/Thunder_city.webp) |
-| Thunder.wav | "thunderstorm in forest" | ![](assets/Thunder_forest.webp) |
+| Thunder.wav | "a beach" | ![](assets/Thunder_beach.webp) |
+| Thunder.wav | "a city" | ![](assets/Thunder_city.webp) |
+| Thunder.wav | "a forest" | ![](assets/Thunder_forest.webp) |
 
 ### 실패 사례
 인간 음성(웃음소리 등)은 제대로 생성되지 않음:
 
 | 오디오 | 텍스트 프롬프트 | 문제점 | 실패 결과 |
 |--------|---------------|--------|----------|
-| laughing_baby.wav | "baby laughing in city" | 잘못된 장면 생성 | ![](assets/laughing_baby_city.png) |
-| laughing_man.wav | "man laughing at beach" | 오디오-비주얼 정렬 실패 | ![](assets/laughing_man_beach.png) |
+| laughing_baby.wav | "a city" | 잘못된 장면 생성 | ![](assets/laughing_baby_city.png) |
+| laughing_man.wav | "a beach" | 오디오-비주얼 정렬 실패 | ![](assets/laughing_man_beach.png) |
 | Thunder.wav | (텍스트 없음) | 추상적 패턴만 생성 | ![](assets/Thunder.webp) |
 
 ## 모델 구조
