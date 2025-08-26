@@ -1,6 +1,7 @@
 # CLAP2Diffusion: 계층적 오디오-이미지 생성
 
 **KUBIG Contest **  
+
 **CV_4조**: 21기 남동연, 22기 신진섭, 22기 공병승
 
 <div align="center">
