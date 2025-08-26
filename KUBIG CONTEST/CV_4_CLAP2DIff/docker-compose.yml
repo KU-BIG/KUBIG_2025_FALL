@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  clap2diffusion:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: clap2diffusion-app
+    
+    # GPU support for Docker Compose v2.3+
+    # Use 'docker compose run --gpus all clap2diffusion' for GPU access
+    # Or uncomment below if your Docker Compose version supports it:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+    
+    # Port mapping
+    ports:
+      - "7860:7860"
+    
+    # Volume mounts
+    volumes:
+      - ./outputs:/app/outputs
+      - ./data:/app/data
+      - ./checkpoints:/app/checkpoints
+      - ./logs:/app/logs
+    
+    # Environment variables
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=${NVIDIA_VISIBLE_DEVICES:-all}
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-0}
+      - PYTHONUNBUFFERED=1
+      - GRADIO_SERVER_NAME=${GRADIO_SERVER_NAME:-127.0.0.1}
+      - GRADIO_SERVER_PORT=${GRADIO_SERVER_PORT:-7860}
+      - GRADIO_USERNAME=${GRADIO_USERNAME:-admin}
+      - GRADIO_PASSWORD=${GRADIO_PASSWORD:-clap2diffusion}
+      - MODEL_CACHE_DIR=/app/models
+      - HF_HOME=/app/.cache/huggingface
+    
+    # Restart policy
+    restart: unless-stopped
+    
+    # Network
+    networks:
+      - clap2diffusion-network
+
+networks:
+  clap2diffusion-network:
+    driver: bridge

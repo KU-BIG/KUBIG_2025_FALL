@@ -1,0 +1,48 @@
+# Core dependencies
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
+
+# Diffusion models
+diffusers==0.23.1
+transformers==4.35.2
+accelerate==0.24.1
+safetensors==0.4.0
+
+# Audio processing
+librosa==0.10.1
+soundfile==0.12.1
+audioread==3.0.1
+
+# CLAP model
+laion-clap==1.1.4
+einops==0.7.0
+
+# Image processing
+opencv-python==4.8.1.78
+Pillow==10.1.0
+scikit-image==0.22.0
+
+# UI
+gradio==4.8.0
+
+# Training utilities
+wandb==0.16.1
+tensorboard==2.15.1
+peft==0.6.2
+
+# Data processing
+numpy==1.24.4
+pandas==2.1.4
+scipy==1.11.4
+matplotlib==3.8.2
+
+# Utils
+tqdm==4.66.1
+pyyaml==6.0.1
+omegaconf==2.3.0
+huggingface-hub==0.19.4
+
+# Optional optimizations
+xformers==0.0.22
+triton==2.1.0

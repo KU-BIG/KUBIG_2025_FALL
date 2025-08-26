@@ -1,0 +1,70 @@
+model:
+  base_model: "runwayml/stable-diffusion-v1-5"
+  clap_model: "laion/larger_clap_music_and_speech"
+  audio_dim: 512
+  text_dim: 768
+  hidden_dim: 1024
+  num_tokens: 77
+  num_heads: 8
+  num_levels: 3  # Hierarchical levels
+
+stage1:
+  name: "Audio Projector Pre-training"
+  num_steps: 3000
+  learning_rate: 1.0e-4
+  batch_size: 8
+  gradient_accumulation_steps: 2
+  infonce_weight: 1.0
+  mse_weight: 0.5
+  warmup_steps: 200
+  checkpoint_steps: 1000
+
+stage2:
+  name: "Full Model Fine-tuning"
+  num_steps: 2000
+  learning_rate: 5.0e-5
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  lora_rank: 16
+  lora_alpha: 32
+  lora_dropout: 0.1
+  checkpoint_steps: 2000
+
+stage3:
+  name: "Final Fine-tuning"
+  num_steps: 1000
+  learning_rate: 1.0e-5
+  batch_size: 2
+  gradient_accumulation_steps: 8
+  gradient_clipping: 0.5
+  checkpoint_steps: 500
+
+hierarchical:
+  temperature_max: 2.0
+  temperature_min: 0.5
+  annealing_steps: 5000
+  orthogonality_weight: 0.1
+  entropy_weight: 0.01
+
+optimization:
+  audio_norm_target: 60.0  # Discovered optimal value
+  gradient_clipping: 1.0
+  weight_decay: 0.01
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-8
+
+data:
+  train_data_path: "../data/audiocaps/train"
+  val_data_path: "../data/audiocaps/val"
+  test_data_path: "../data/audiocaps/test"
+  num_workers: 4
+  prefetch_factor: 2
+  pin_memory: true
+
+logging:
+  project_name: "clap2diffusion"
+  run_name: "hierarchical_v4"
+  log_interval: 100
+  save_interval: 1000
+  eval_interval: 500
