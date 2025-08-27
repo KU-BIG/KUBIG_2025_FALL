@@ -92,6 +92,9 @@ ML 1팀
 | timeseriessplit test_size 수정 | public 11.58 |
 | test_size 수정 + 앙상블 | public 10.56 |
 | test_size 수정 + 하이퍼 파라미터 튜닝 후 앙상블 | public 7.6 |
+| baseline 기본값 | public 11.76 |
+| XGBoost 중심 | public 8.17 |
+| 하이퍼 파라미터 튜닝, 앙상블+후처리 | public 6.9 |
 
 ---
 
