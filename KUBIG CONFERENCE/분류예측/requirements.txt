@@ -1,0 +1,15 @@
+# CTR Prediction Model Requirements
+# Python 3.8+
+
+# Data Processing
+numpy==1.24.3
+pandas==2.0.3
+pyarrow==12.0.1
+
+# Machine Learning
+scikit-learn==1.3.0
+scipy==1.11.1
+
+# Gradient Boosting Models
+lightgbm==4.1.0
+catboost==1.2.2
