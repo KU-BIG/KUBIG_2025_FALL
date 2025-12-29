@@ -1,4 +1,5 @@
 # Mini-Genie: Generative Interactive Environments
+Generative Model team 1: 김채은, 전하은, 신진섭, 황원준
 
 An implementation of generative world models for interactive environments based on the Genie framework. This project implements a spatiotemporal video tokenizer, latent action model, and dynamics model for learning controllable world simulators from video data.
 
