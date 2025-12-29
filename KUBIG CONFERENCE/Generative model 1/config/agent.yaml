@@ -1,0 +1,47 @@
+seed_everything: 31415
+
+model:
+  tokenizer_ckpt: log/genie-tokenizer/version_1/checkpoints/epoch=13-step=6622.ckpt  # 실제 경로로 수정
+  world_ckpt: log/genie-action/version_0/checkpoints/epoch=31-step=7584.ckpt  # 실제 경로로 수정
+  horizon: 4
+  gamma: 0.99
+  entropy_coef: 0.01
+  lr: 3e-4
+  # max_train_samples: 10
+  # max_val_samples: 10
+
+data:
+  root: data
+  env_name: Ninja
+  num_frames: 16
+  batch_size: 1
+  num_workers: 4
+  # max_train_samples: 10
+  # max_val_samples: 10
+
+trainer:
+  max_epochs: 100
+  accelerator: gpu
+  devices: 1
+  precision: 16-mixed
+  default_root_dir: log/genie-agent
+  log_every_n_steps: 10
+  val_check_interval: 1.0
+  limit_val_batches: 50
+  logger:
+    - class_path: lightning.pytorch.loggers.TensorBoardLogger
+      init_args:
+        save_dir: /mnt/d/workspace/KUBIG/25-2_conference/open-genie_local/log
+        name: genie-agent
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:
+          monitor: val_loss
+          mode: min
+          save_top_k: 1
+          save_last: false
+          filename: "best-{epoch}-{step}"
+      
+    - class_path: lightning.pytorch.callbacks.LearningRateMonitor
+      init_args:
+        logging_interval: step

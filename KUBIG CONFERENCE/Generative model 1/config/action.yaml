@@ -1,0 +1,56 @@
+seed_everything: 31415
+
+trainer:
+  accelerator: gpu
+  devices: 1
+  strategy: ddp_find_unused_parameters_true
+  precision: 16-mixed
+  max_epochs: 40
+  log_every_n_steps: 16
+  num_sanity_val_steps: 0
+  limit_val_batches: 1.0  # 전체 val 배치를 사용해 검증 수행
+  val_check_interval: 1.0  # 에폭마다 검증 실행
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:
+        monitor: val_loss
+        mode: min
+        save_top_k: 1
+        save_last: true
+
+  logger:
+    - class_path: lightning.pytorch.loggers.TensorBoardLogger
+      init_args:
+        save_dir: "/mnt/d/workspace/KUBIG/25-2_conference/open-genie/log"
+        name: genie-action
+        version: null
+
+model:
+  # Provide path to a pretrained VideoTokenizer checkpoint (change to your path)
+  # TODO : 본인 로컬 경로로 바꾸기
+  tokenizer_checkpoint: "/mnt/d/workspace/KUBIG/25-2_conference/open-genie/log/genie-tokenizer/version_1/checkpoints/epoch=13-step=6622.ckpt"
+
+  # Optional overrides for latent-action / dynamics hyperparams can go here
+  # (Genie will construct LatentAction and DynamicsModel using defaults)
+
+  optimizer:
+    class_path: torch.optim.AdamW
+    init_args:
+      lr: 1e-4
+      weight_decay: 0.0
+
+# Data settings
+data:
+# TODO : 본인 로컬 경로로 바꾸기
+  root: /mnt/d/workspace/KUBIG/25-2_conference/open-genie/data
+  env_name: Ninja
+  padding: none
+  randomize: true
+  transform: null
+  num_frames: 16
+  output_format: c t h w
+  batch_size: 1
+  num_workers: 4
+
+# Safety: do not load a tokenizer checkpoint path by default unless provided
+ckpt_path: null

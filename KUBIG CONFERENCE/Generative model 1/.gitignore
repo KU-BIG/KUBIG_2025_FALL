@@ -1,0 +1,42 @@
+*.vs*
+*.pytest*
+*.pyc
+*.ipynb
+
+*DS_Store*
+
+*egg*
+*log*
+*.local*
+test/.*
+
+# Data files (too large for git)
+data/*.zip
+data/*/train/
+data/*/val/
+data/*/test/
+
+# Keep data structure but ignore video files
+!data/*/
+!data/Ninja/val/*.mp4
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

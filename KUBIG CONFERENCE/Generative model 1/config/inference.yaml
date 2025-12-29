@@ -1,0 +1,25 @@
+seed_everything: 31415
+
+# Model checkpoints
+checkpoints:
+  tokenizer: log/genie-tokenizer/version_1/checkpoints/epoch=13-step=6622.ckpt
+  world: log/genie-action/version_0/checkpoints/epoch=31-step=7584.ckpt
+  agent: log/genie-agent/version_0/checkpoints/best-epoch=36-step=17501.ckpt
+
+# Inference settings
+inference:
+  video_path: data/Ninja/val/0000.mp4  # Input video path
+  num_frames_to_generate: 100  # Number of frames to generate after initial 2 frames (increased for longer video)
+  steps_per_frame: 25  # Mask-GIT steps per frame generation (increased for better quality)
+  temperature: 0.5  # Lower temperature for more deterministic generation (reduces noise)
+  topk: 50  # Top-k sampling for token generation
+  device: cuda  # cuda or cpu
+  output_path: inference_output.mp4  # Output video path
+  fps: 8  # Frames per second for output video (lower = slower playback, easier to see actions)
+
+# Model hyperparameters (should match training configs)
+model:
+  horizon: 4
+  gamma: 0.99
+  entropy_coef: 0.01
+

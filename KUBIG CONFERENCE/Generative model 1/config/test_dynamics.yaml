@@ -1,0 +1,28 @@
+# Configuration for testing dynamics model with manual actions
+
+# Checkpoint paths
+checkpoints:
+  tokenizer: log/genie-tokenizer/version_1/checkpoints/epoch=13-step=6622.ckpt
+  # Use either world_ckpt (combined) or both latent_action_ckpt and dynamics_ckpt
+  # If latent_action_ckpt and dynamics_ckpt are the same path, it will be treated as a combined checkpoint
+  world_ckpt: null  # Path to combined world checkpoint (if available)
+  latent_action_ckpt: log/genie-action/version_0/checkpoints/epoch=31-step=7584.ckpt
+  dynamics_ckpt: log/genie-action/version_0/checkpoints/epoch=31-step=7584.ckpt  # Same as latent_action_ckpt = combined checkpoint
+
+# Generation settings
+generation:
+  actions: [0, 1, 2, 3, 4, 5]  # Action sequence to test (comma-separated or list)
+  steps_per_frame: 25  # MaskGIT sampling steps per frame
+  frames_per_action: 15  # Number of times to repeat each generated frame (15 = 1 second at 15fps)
+  output: output.mp4  # Output video path
+  fps: 15  # Frames per second for output video
+
+# Optional: initial frame
+# Can be either:
+# - Path to an image file (e.g., "path/to/frame.png")
+# - Path to a video file (e.g., "data/Ninja/train/0000.mp4") - will use first frame
+initial_frame: data/Ninja/train/0000.mp4  # Path to initial frame image or video (optional, uses black frame if null)
+
+# Device settings
+device: cuda  # cuda or cpu
+

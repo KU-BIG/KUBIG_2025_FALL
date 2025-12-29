@@ -1,0 +1,210 @@
+from os import path
+import unittest
+
+import torch
+import yaml
+
+from genie import VideoTokenizer
+from genie.dataset import LightningPlatformer2D
+from genie.tokenizer import REPR_TOK_ENC
+from genie.tokenizer import REPR_TOK_DEC
+
+REPR_TOK_ENC = (
+    ('spacetime_downsample', {
+        'in_channels' : 3,
+        'kernel_size' : 3,
+        'out_channels' : 512,
+        'time_factor' : 1,
+        'space_factor' : 4,
+    }),
+    ('space-time_attn', {
+        'n_rep' : 8,
+        'n_head': 8,
+        'd_head': 64,
+        'transpose' : True,
+    }),
+)
+
+REPR_TOK_DEC = (
+    ('space-time_attn', {
+        'n_rep' : 8,
+        'n_head': 8,
+        'd_head': 64,
+        'transpose' : True,
+    }),
+    ('depth2spacetime_upsample', {
+        'in_channels' : 512,
+        'kernel_size' : 3,
+        'out_channels' : 3,
+        'time_factor' : 1,
+        'space_factor' : 4,
+    })
+)
+
+# Loading `local_settings.json` for custom local settings
+test_folder = path.dirname(path.abspath(__file__))
+local_settings = path.join(test_folder, '.local.yaml')
+
+with open(local_settings, 'r') as f:
+    local_settings = yaml.safe_load(f)
+
+class TestVideoTokenizer(unittest.TestCase):
+    def setUp(self):
+        
+        # keep codebook size small for unit tests to avoid huge intermediate tensors
+        # (large d_codebook leads to codebook_size = 2**d_codebook which can OOM)
+        self.d_codebook = 8
+        self.n_codebook = 1
+        
+        self.batch_size = 2
+        self.num_frames = 8
+        self.num_channels = 3
+        self.img_h, self.img_w = 64, 64
+        
+        # Number of channels after the encoding by the MAGVIT2
+        self.hid_channels = 18
+        
+        self.time_down  = 4 # This parameters are determined by MAGVIT2
+        self.space_down = 8 # This parameters are determined by MAGVIT2
+        
+        self.tokenizer = VideoTokenizer(
+            # enc_desc = REPR_TOK_ENC,
+            # dec_desc = REPR_TOK_DEC,
+            enc_desc = REPR_TOK_ENC,
+            dec_desc = REPR_TOK_DEC,
+            
+            disc_kwargs=dict(
+                # Discriminator parameters
+                inp_size = (self.img_h, self.img_w),
+                model_dim = 64,
+                dim_mults = (1, 2, 4),
+                down_step = (None, 2, 2),
+                inp_channels = self.num_channels,
+                kernel_size = 3,
+                use_attn = False,
+                use_blur = True,
+                num_groups = 8,
+                num_heads = 4,
+                dim_head = 32,
+            ),
+            
+            d_codebook = self.d_codebook,
+            n_codebook = self.n_codebook,
+            #
+            lfq_bias = True,
+            lfq_frac_sample = 1.,
+            lfq_commit_weight = 0.25,
+            lfq_entropy_weight = 0.1,
+            lfq_diversity_weight = 1.,
+            #
+            perceptual_model = 'vgg16',
+            perc_feat_layers = ('features.6', 'features.13', 'features.18', 'features.25'),
+            gan_discriminate='frames',
+            gan_frames_per_batch = 4,
+            gan_loss_weight = 1.,
+            perc_loss_weight = 1.,
+            quant_loss_weight = 1.,
+        )
+        
+        # Example video tensor
+        self.video = torch.randn(
+            self.batch_size,
+            self.num_channels,
+            self.num_frames,
+            self.img_h,
+            self.img_w
+        )
+
+    # 인코더만 테스트 (출력 shape 확인)
+    def test_encode(self):
+        encoded = self.tokenizer.encode(self.video)
+        self.assertEqual(encoded.shape, (
+            self.batch_size,
+            self.hid_channels,
+            self.num_frames // self.time_down,
+            self.img_h // self.space_down,
+            self.img_w // self.space_down
+        ))  # Check output shape
+
+    # 디코더만 테스트 (입력 quantized 텐서로 출력 shape 확인)
+    def test_decode(self):
+        quantized = torch.randn(
+            self.batch_size,
+            self.hid_channels,
+            self.num_frames // self.time_down,
+            self.img_h // self.space_down,
+            self.img_w // self.space_down,
+        )  # Example quantized tensor
+        decoded = self.tokenizer.decode(quantized)
+        self.assertEqual(decoded.shape, (
+            self.batch_size,
+            self.num_channels,
+            self.num_frames,
+            self.img_h,
+            self.img_w
+        ))  # Check output shape
+        
+    def test_tokenize(self):
+        tokens, idxs = self.tokenizer.tokenize(self.video)
+        self.assertEqual(tokens.shape, (
+            self.batch_size, 
+            self.hid_channels,
+            self.num_frames // self.time_down,
+            self.img_h // self.space_down,
+            self.img_w // self.space_down,
+        )) # Check output shape
+        
+        if self.hid_channels == 2 ** self.d_codebook:
+            # If not output projection, check that tokens have values in {-1, +1}
+            self.assertTrue(torch.allclose(tokens, torch.sign(tokens)))
+        
+        self.assertEqual(idxs.shape, (
+            self.batch_size,
+            self.num_frames // self.time_down,
+            self.img_h // self.space_down,
+            self.img_w // self.space_down,
+        ))
+
+    def test_forward(self):
+        loss, aux_losses = self.tokenizer(self.video)
+        
+        self.assertTrue(loss >= 0)
+        for loss in aux_losses:
+            self.assertEqual(loss.shape, torch.Size([]))  # Check the output shape
+        
+        print(aux_losses)
+        self.assertTrue(aux_losses[0] >= 0)
+        self.assertTrue(aux_losses[2] >= 0)
+        self.assertTrue(aux_losses[3] >= 0)
+        self.assertTrue(aux_losses[4] >= 0)
+        
+    def test_forward_platformer_2d(self):
+        dataset = LightningPlatformer2D(
+            root=local_settings['platformer_remote_root'],
+            output_format='c t h w',
+            transform=None,
+            randomize=True,
+            batch_size=self.batch_size,
+            num_frames=self.num_frames,
+            num_workers=4,
+        )
+
+        dataset.setup('fit')
+        loader = dataset.train_dataloader()
+        
+        video = next(iter(loader))
+
+        loss, aux_losses = self.tokenizer(video)
+        
+        self.assertTrue(loss >= 0)
+        for loss in aux_losses:
+            self.assertEqual(loss.shape, torch.Size([]))  # Check the output shape
+        
+        print(aux_losses)
+        self.assertTrue(aux_losses[0] >= 0)
+        self.assertTrue(aux_losses[2] >= 0)
+        self.assertTrue(aux_losses[3] >= 0)
+        self.assertTrue(aux_losses[4] >= 0)
+
+if __name__ == '__main__':
+    unittest.main()
