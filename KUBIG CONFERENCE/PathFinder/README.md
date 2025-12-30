@@ -117,50 +117,6 @@ path_finder_ku_2025/
 
 ---
 
-## 🔧 Installation & Setup
-
-### 1️⃣ 필수 요구사항
-
-- Python 3.8 이상
-- OpenAI API Key
-- (선택) Notion Integration Token, Google Cloud Project Token
-
-### 2️⃣ 설치 및 환경 설정
-
-```bash
-# 저장소 클론
-git clone [https://github.com/HaeAnn0203/path_finder_ku_2025.git](https://github.com/HaeAnn0203/path_finder_ku_2025.git)
-cd path_finder_ku_2025
-
-# 가상환경 생성 및 활성화
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# Mac/Linux:
-source venv/bin/activate
-
-# 패키지 설치
-pip install -r requirements.txt
-```
-
-### 3️⃣ 환경 변수 설정 (.env)
-
-프로젝트 루트에 `.env` 파일을 생성하고 아래 정보를 입력하세요.
-
-```bash
-# OpenAI API (필수)
-OPENAI_API_KEY=sk-proj-...
-
-# Notion API (선택 - 공고 저장 기능 사용 시)
-NOTION_API_KEY=secret_...
-NOTION_JOB_DB_ID=...
-
-# 데이터베이스 경로
-DB_PATH=data/job_service.db
-```
-
----
-
 ## 🏃‍♂️ Usage
 
 Chainlit을 사용하여 웹 인터페이스로 에이전트와 대화할 수 있습니다.
