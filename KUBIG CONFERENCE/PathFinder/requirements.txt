@@ -1,0 +1,16 @@
+langchain
+langchain-openai
+langchain-community
+langgraph
+faiss-cpu
+pandas
+numpy
+python-dotenv
+tiktoken
+openpyxl
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+notion-client
+chainlit
