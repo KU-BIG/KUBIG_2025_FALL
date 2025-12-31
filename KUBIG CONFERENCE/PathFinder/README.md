@@ -1,8 +1,8 @@
 # 🧭 PATHFINDER: 나만의 커리어 탐색 에이전트
 
-> **KUBIG 2025 Conference Project** >
-> 불확실한 직무 방향성으로 고민하는 취업 준비생을 위한 Multi-Agent 기반의 맞춤형 커리어 솔루션
-> Team Curator : 김수환, 남수빈, 백서현, 성용빈, 윤채영
+#### KUBIG 2025 Conference Project
+#### Team Curator : 김수환, 남수빈, 백서현, 성용빈, 윤채영
+> #### 불확실한 직무 방향성으로 고민하는 취업 준비생을 위한 Multi-Agent 기반의 맞춤형 커리어 솔루션
 
 ![Project Banner](https://img.shields.io/badge/KUBIG-Data%20Science-red?style=for-the-badge) ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge) ![LangGraph](https://img.shields.io/badge/LangGraph-Orchestration-orange?style=for-the-badge)
 
