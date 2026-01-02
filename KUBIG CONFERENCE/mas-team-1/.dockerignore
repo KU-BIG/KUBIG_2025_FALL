@@ -1,0 +1,25 @@
+# Dependencies
+web/node_modules
+node_modules
+
+# Build outputs
+web/.next
+web/out
+
+# Development
+.git
+.gitignore
+*.md
+.env*
+.vscode
+
+# Podcast source (data already copied to web/public)
+podcast
+debate
+agents
+tts
+temp
+
+# Other
+**/*.log
+**/.DS_Store

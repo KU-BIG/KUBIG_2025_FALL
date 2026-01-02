@@ -1,0 +1,1155 @@
+{
+  "date": "20251222",
+  "nutshell": "AI와 미디어 빅딜이 이끄는 선별 랠리, 연준 완화 기대와 금 랠리가 배경",
+  "user_tickers": [
+    "LLY"
+  ],
+  "chapter": [
+    {
+      "name": "opening",
+      "start_id": 0,
+      "end_id": 5
+    },
+    {
+      "name": "theme",
+      "start_id": 6,
+      "end_id": 29
+    },
+    {
+      "name": "ticker",
+      "start_id": 30,
+      "end_id": 37
+    },
+    {
+      "name": "closing",
+      "start_id": 38,
+      "end_id": 45
+    }
+  ],
+  "scripts": [
+    {
+      "id": 0,
+      "speaker": "진행자",
+      "text": "12월 22일 장마감 브리핑입니다. 크리스마스를 앞두고 지수들이 나란히 올랐는데요, 오늘 뉴욕 증시는 어떤 흐름으로 하루를 마무리했는지 먼저 정리해 보겠습니다.",
+      "sources": [],
+      "time": [
+        0,
+        11171
+      ]
+    },
+    {
+      "id": 1,
+      "speaker": "해설자",
+      "text": "오늘 장을 한마디로 정리하면 AI와 미디어 빅딜이 이끄는 선별 랠리, 연준 완화 기대와 금 랠리가 배경입니다. S&P 500 지수는 어제보다 약 0.6퍼센트 오르며 사흘 연속 상승했고, 나스닥 지수도 0.5퍼센트가량, 다우 지수는 0.5퍼센트에 조금 못 미치는 상승률을 기록했습니다. 장 중 내내 인공지능 관련 대형 기술주와 워너 브라더스 디스커버리, 파라마운트 같은 이벤트 종목들로 매수가 쏠리면서 지수를 끌어올렸고, 금과 은 가격은 온스당 4400달러 중반, 60달러 후반대로 뛰어오르며 사상 최고 수준을 다시 썼습니다. 시카고 연은 경제활동지수가 예상보다는 나쁘지 않게 나오고 연준 인사들의 완화적인 발언이 이어지면서, 유동성은 풍부하고 금리는 낮아진 가운데 위험자산과 안전자산이 동시에 강세를 보인 날이었습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#63d0fead8de5be90",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq rise for third straight day, gold hits record to extend 2025 rally"
+        },
+        {
+          "type": "article",
+          "pk": "id#8b0990c94ff8f41f",
+          "title": "Crypto prices again muted as gold surges to new record, U.S. stocks advance"
+        },
+        {
+          "type": "article",
+          "pk": "id#7544f0a1fcefcc65",
+          "title": "Wall Street anticipates a new all-time high as Washington aims ‘cash bazooka’ at banks and consumers"
+        },
+        {
+          "type": "chart",
+          "ticker": "^GSPC",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "^IXIC",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "^DJI",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "GC=F",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "SI=F",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "event",
+          "id": "386011",
+          "title": "chicago fed national activity index",
+          "date": "2025-12-22"
+        }
+      ],
+      "time": [
+        11671,
+        62522
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "진행자",
+      "text": "지수는 비교적 잔잔했는데도 방송가에서는 워너 브라더스 디스커버리를 둘러싼 인수전 얘기가 계속 나왔습니다. 워너 브라더스와 파라마운트, 그리고 넷플릭스 주가가 어떻게 움직였는지, 투자자 입장에서 어떤 신호로 봐야 할까요.",
+      "sources": [],
+      "time": [
+        63022,
+        77793
+      ]
+    },
+    {
+      "id": 3,
+      "speaker": "해설자",
+      "text": "오늘 미디어 섹터의 중심에는 워너 브라더스 디스커버리를 향한 파라마운트 스카이댄스의 적대적 인수 제안이 있었습니다. 오라클 창업자 래리 엘리슨이 이 거래를 위해 404억 달러 규모의 자금 조달을 개인 보증하겠다고 나서면서, 워너 브라더스 디스커버리 주가는 27달러대 후반에서 28달러대 중반으로 올라 약 3퍼센트 넘게, 파라마운트도 13달러 초반에서 중반대로 4퍼센트 가까이 뛰었습니다. 반면 워너 브라더스와 기존에 우호적인 거래를 맺어둔 넷플릭스는 시장 주목이 빅딜 경쟁 구도로 옮겨가며 주가가 소폭 조정을 받았습니다. 헐리우드 대표 콘텐츠 자산을 둘러싼 몸값 경쟁이 치열해질수록 해당 종목뿐 아니라 동종 업종 전반의 밸류에이션 재평가와 추가 인수합병 기대가 커질 수 있다는 점에서, 오늘 움직임은 내년 미디어 섹터의 변동성을 예고해 주는 신호로 볼 수 있습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#8948fa7578f8a538",
+          "title": "Paramount’s new, hostile offer to Warner Bros. Discovery: Larry Ellison will personally guarantee $40 billion"
+        },
+        {
+          "type": "article",
+          "pk": "id#688db1ded1e5d132",
+          "title": "Larry Ellison puts $40 billion behind Paramount's Warner Bros. bid"
+        },
+        {
+          "type": "article",
+          "pk": "id#a2dd02d49729fe69",
+          "title": "Why Warner Bros. Discovery (WBD) Stock Is Trading Up Today"
+        },
+        {
+          "type": "article",
+          "pk": "id#fb7c381cc86413d0",
+          "title": "Paramount (PSKY) Stock Is Up, What You Need To Know"
+        },
+        {
+          "type": "chart",
+          "ticker": "WBD",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "PSKY",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "NFLX",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        78293,
+        127344
+      ]
+    },
+    {
+      "id": 4,
+      "speaker": "진행자",
+      "text": "AI 이야기도 빠질 수 없는데요, 오늘은 어떤 인공지능 관련 종목들이 지수를 끌어올렸는지, 또 연준 이사 발언과 금 가격 급등까지 겹치면서 분위기가 어떻게 얽혔는지도 함께 짚어 주시죠.",
+      "sources": [],
+      "time": [
+        127844,
+        140575
+      ]
+    },
+    {
+      "id": 5,
+      "speaker": "해설자",
+      "text": "엔비디아가 내년 초부터 중국에 고성능 H200 칩을 공급할 채비를 하고 있다는 소식에 주가가 1퍼센트대 중반 올랐고, 알파벳은 데이터 센터와 전력 인프라 기업 인터섹트 인수 발표로 1퍼센트 안팎 상승하며 나스닥을 받쳐 줬습니다. C3.ai와 사운드하운드 AI 같은 대표적 인공지능 소프트웨어 종목들도 2퍼센트 안팎 강세를 보였고, 구글과 협업하는 비트코인 채굴사와 데이터 센터 기업들까지 동반 상승하면서 AI 인프라 전반으로 매기가 확산됐습니다. 한편 연준의 스티븐 미란 이사가 추가 금리 인하가 없으면 경기 침체 위험이 커질 수 있다고 경고하고, 시카고 연은 지표도 완만한 회복을 시사하면서 완화적인 통화정책 기대가 유지됐고, 그 결과 금과 은은 사상 최고가를 다시 쓰며 인플레이션 헤지 수단에 대한 수요도 확인됐습니다. 정리하면 AI 인프라 투자와 관련주 강세, 워너 브라더스를 둘러싼 헐리우드 빅딜, 연준 완화 기대와 금 랠리 정도가 오늘 시장을 움직인 핵심 주제였습니다. 이제 먼저 미디어 업종에서 벌어지고 있는 워너 브라더스 인수전부터 하나씩 차분히 짚어보겠습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#58d7819b29889c83",
+          "title": "Exclusive-Nvidia aims to begin H200 chip shipments to China by mid-February, sources say"
+        },
+        {
+          "type": "article",
+          "pk": "id#ddaeb647540b3254",
+          "title": "Alphabet to buy data center firm Intersect in $4.75 billion deal amid AI push"
+        },
+        {
+          "type": "article",
+          "pk": "id#0005cf4b0bc7ab94",
+          "title": "Hut 8’s AI data center deal is bigger than meets the eye: Benchmark lifts price target to $85"
+        },
+        {
+          "type": "article",
+          "pk": "id#ee584e7fcd66a458",
+          "title": "C3.ai (AI) Stock Is Up, What You Need To Know"
+        },
+        {
+          "type": "article",
+          "pk": "id#4522e25761b03afa",
+          "title": "SoundHound AI (SOUN) Stock Is Up, What You Need To Know"
+        },
+        {
+          "type": "article",
+          "pk": "id#b98e117f121d9fdc",
+          "title": "AI spending spree drives global tech debt issuance to record high"
+        },
+        {
+          "type": "article",
+          "pk": "id#0fbc8c37a50b2696",
+          "title": "Fed's Miran says he'll likely stay after term ends until his seat is filled - Bloomberg"
+        },
+        {
+          "type": "article",
+          "pk": "id#d0ecec4221554aa9",
+          "title": "Fed Risks Recession Without More Interest Rate Cuts, Miran Says"
+        },
+        {
+          "type": "article",
+          "pk": "id#8b0990c94ff8f41f",
+          "title": "Crypto prices again muted as gold surges to new record, U.S. stocks advance"
+        },
+        {
+          "type": "chart",
+          "ticker": "NVDA",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "GOOG",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "AI",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "SOUN",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "GC=F",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "SI=F",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "event",
+          "id": "386011",
+          "title": "chicago fed national activity index",
+          "date": "2025-12-22"
+        }
+      ],
+      "time": [
+        141075,
+        206486
+      ]
+    },
+    {
+      "id": 6,
+      "speaker": "진행자",
+      "text": "아까 정리해 주신 흐름 가운데서도 가장 눈에 띄는 장면이 바로 워너 브라더스 디스커버리를 둘러싼 파라마운트 스카이댄스와 넷플릭스의 인수전이었는데요, 래리 엘리슨의 404억 달러 개인 보증 소식에 관련주가 3퍼센트, 4퍼센트씩 튀어 오르기도 했죠. 이 헐리우드 빅딜 전면전의 구도와 의미를 조금 더 구조적으로 풀어 주시죠.",
+      "sources": [],
+      "time": [
+        207486,
+        231297
+      ]
+    },
+    {
+      "id": 7,
+      "speaker": "해설자",
+      "text": "지금 판을 정리해 보면 넷플릭스는 이미 워너 브라더스 디스커버리의 스튜디오와 스트리밍 자산을 약 27달러 중반대 주가 기준, 총 800억 달러 초반 수준으로 사들이는 우호적인 계약에 합의해 둔 상태입니다. 여기에 파라마운트 스카이댄스가 회사 전체를 주당 30달러, 현금으로 사겠다고 나서면서 기업가치로는 1천80억 달러 안팎을 제시하고 있고, 그 핵심이 바로 래리 엘리슨의 404억 달러 개인 보증입니다. 여러 공시와 보도를 보면 엘리슨이 자신의 패밀리 트러스트가 보유한 오라클 지분을 근거로 이 금액을 직접 책임지겠다고 나섰고, 거래가 무산될 때 지급하는 위약금도 58억 달러까지 올려 넷플릭스 제안과 조건을 맞췄다는 점이 강조됩니다. 즉 가격은 파라마운트가 더 높지만, 워너 브라더스 이사회가 우려했던 자금 조달의 확실성을 얼마나 해소했느냐가 이번 카드의 핵심이라고 보시면 되겠습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#8948fa7578f8a538",
+          "title": "Paramount’s new, hostile offer to Warner Bros. Discovery: Larry Ellison will personally guarantee $40 billion"
+        },
+        {
+          "type": "article",
+          "pk": "id#25a446dfd2e9fe6c",
+          "title": "Billionaire Larry Ellison comes to his son’s rescue, agreeing to personally guarantee over $40 billion to finance Paramount’s bid for Warner Bros."
+        },
+        {
+          "type": "article",
+          "pk": "id#dab45174567754e3",
+          "title": "Larry Ellison guarantees $40.4 billion in Paramount's hostile bid for Warner Bros. Discovery"
+        },
+        {
+          "type": "article",
+          "pk": "id#a2dd02d49729fe69",
+          "title": "Why Warner Bros. Discovery (WBD) Stock Is Trading Up Today"
+        },
+        {
+          "type": "article",
+          "pk": "id#445178a7329abd8f",
+          "title": "Netflix Refinances Part of $59 Billion Loan for Warner Bros. Bid"
+        }
+      ],
+      "time": [
+        231797,
+        281048
+      ]
+    },
+    {
+      "id": 8,
+      "speaker": "진행자",
+      "text": "말씀하신 것처럼 숫자만 보면 파라마운트 쪽 제안이 더 후한 것 같은데, 주가 반응은 어떻습니까. 오늘 워너 브라더스 디스커버리와 파라마운트, 그리고 넷플릭스의 움직임을 전일 대비로 한번 짚어 주시죠.",
+      "sources": [],
+      "time": [
+        281548,
+        295999
+      ]
+    },
+    {
+      "id": 9,
+      "speaker": "해설자",
+      "text": "가격만 놓고 보면 워너 브라더스 디스커버리 주가는 전 거래일 27달러 후반에서 오늘 28달러 중반으로 올라 약 3.5퍼센트 상승 마감했고, 파라마운트 스카이댄스도 13달러 초반에서 13달러 중반대로 4퍼센트대 초반 오르면서 시장이 파라마운트 제안의 현실성을 조금 더 높게 보기 시작한 모습입니다. 관련 리포트에서도 이번 수정 제안 이후 두 종목 모두 장 초반 4퍼센트 이상 급등했다는 점을 전하고 있고, 워너 브라더스는 1년 사이 두 자릿수 이상 오른 변동성 높은 종목이라는 점도 함께 짚고 있습니다. 넷플릭스는 장중에 1퍼센트 안팎 약세를 보이기도 하는 등 상대적으로는 조용했는데, 이미 이사회 승인을 받은 우호적 제안자라기보다는 파라마운트의 공세에 따라 방어적인 입장에 서 있는 쪽으로 인식이 옮겨가고 있기 때문입니다. 요약하면 오늘 주가 흐름은 누가 더 좋은 가격을 제시했느냐를 넘어서, 실제로 딜을 끝까지 밀어붙일 수 있는지에 대해 투자자들이 베팅을 시작했다는 신호로 볼 수 있습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#a2dd02d49729fe69",
+          "title": "Why Warner Bros. Discovery (WBD) Stock Is Trading Up Today"
+        },
+        {
+          "type": "article",
+          "pk": "id#fb7c381cc86413d0",
+          "title": "Paramount (PSKY) Stock Is Up, What You Need To Know"
+        },
+        {
+          "type": "article",
+          "pk": "id#364c2b0db3f35238",
+          "title": "Oracle's Larry Ellison agrees to backstop $40.4 billion in financing for Paramount acquisition of Warner Bros."
+        },
+        {
+          "type": "chart",
+          "ticker": "WBD",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "PSKY",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        296499,
+        358110
+      ]
+    },
+    {
+      "id": 10,
+      "speaker": "진행자",
+      "text": "그렇다면 왜 워너 브라더스 이사회는 여전히 넷플릭스 쪽에 마음을 두고 있는 걸까요. 단순히 가격이 아니라 딜 구조나 규제 리스크 같은 더 큰 그림에서 두 제안의 차이를 어떻게 봐야 할지 설명해 주시죠.",
+      "sources": [],
+      "time": [
+        358610,
+        373541
+      ]
+    },
+    {
+      "id": 11,
+      "speaker": "해설자",
+      "text": "워너 브라더스 이사회가 넷플릭스를 선호하는 배경에는 안정성이라는 키워드가 있습니다. 넷플릭스는 스튜디오와 스트리밍 자산만 떼어오는 구조로 약 27달러 중반대, 800억 달러 안팎의 거래를 제안했고, 이미 590억 달러 규모 브리지론을 깐 뒤 250억 달러의 은행 대출 약정을 새로 확보하는 등 투자등급 신용도를 바탕으로 한 전통적인 자금 조달을 보여주고 있습니다. 반면 파라마운트 제안은 회사 전체를 인수하는 만큼 금액은 더 크지만, 중동 국부펀드와 사모펀드를 비롯한 다양한 투자자가 얽혀 있고, 초기에는 패밀리 트러스트를 통한 보증 구조 때문에 워너 브라더스 이사회가 환상이거나 불완전한 자금이라고까지 표현했을 정도로 불신이 컸습니다. 이번에 래리 엘리슨이 개인 보증을 약속하고 위약금도 넷플릭스 수준으로 맞추면서 그런 의구심을 상당 부분 줄였지만, 한편으로는 외국 국부펀드가 미국 핵심 미디어 자산에 깊숙이 관여하는 것에 대한 규제와 외교적 부담이라는 또 다른 변수가 남아 있다는 점도 전문가들이 지적하고 있습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#445178a7329abd8f",
+          "title": "Netflix Refinances Part of $59 Billion Loan for Warner Bros. Bid"
+        },
+        {
+          "type": "article",
+          "pk": "id#e8df4036559e49e4",
+          "title": "Netflix Lines Up $25 Billion in Bank Financing for Warner Bros. Deal"
+        },
+        {
+          "type": "article",
+          "pk": "id#62c33abc01112ff7",
+          "title": "Larry Ellison gives $40.4 billion guarantee for Paramount bid for Warner Bros"
+        },
+        {
+          "type": "article",
+          "pk": "id#09d07503cc4a656f",
+          "title": "Ellison steps in with personal guarantee as Paramount fights for Warner Bros"
+        },
+        {
+          "type": "article",
+          "pk": "id#dab45174567754e3",
+          "title": "Larry Ellison guarantees $40.4 billion in Paramount's hostile bid for Warner Bros. Discovery"
+        }
+      ],
+      "time": [
+        374041,
+        433212
+      ]
+    },
+    {
+      "id": 12,
+      "speaker": "진행자",
+      "text": "결국 워너 브라더스 한 종목의 문제가 아니라 헐리우드 전체와 글로벌 미디어 업종 재편과 연결된 싸움으로 봐야 할 것 같은데요. 오늘처럼 연말 들어 대형 인수합병 뉴스가 쏟아지는 환경에서 이 빅딜 전면전이 시장과 미디어 섹터에 어떤 메시지를 주는지도 정리해 주시죠.",
+      "sources": [],
+      "time": [
+        433712,
+        451522
+      ]
+    },
+    {
+      "id": 13,
+      "speaker": "해설자",
+      "text": "워너 브라더스 인수전은 올해 말 전 세계적으로 이어지고 있는 인수합병 붐의 상징적인 장면입니다. 한 통계에 따르면 이달에만 4천6백억 달러가 넘는 대형 거래가 발표되면서 지난해 같은 기간보다 30퍼센트 이상 늘었고, 연간으로도 4조8천억 달러를 웃도는 두 번째로 큰 해가 될 것이라는 전망이 나옵니다. 특히 이번 딜은 방대한 콘텐츠 라이브러리와 지식재산을 얼마나 많이 쥐느냐가 스트리밍과 인공지능 시대 미디어 기업의 생존을 가르는 핵심 자산이 됐다는 점을 잘 보여주고 있고, 그래서 은행과 사모펀드, 국부펀드까지 총동원되는 자본의 각축장이 된 상황입니다. 투자자 입장에서는 워너 브라더스 디스커버리와 파라마운트 같은 당사자뿐 아니라, 비슷한 자산을 가진 다른 미디어 기업들까지 몸값 재평가와 추가 인수합병 기대를 받는 전형적인 이벤트 장세가 내년까지 이어질 수 있다는 점을 염두에 둘 필요가 있겠습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#66b801ce787338eb",
+          "title": "Warner Bros bidding war and red hot M&A market has dealmakers working through holidays"
+        },
+        {
+          "type": "article",
+          "pk": "id#c3f2c94a4fbf8bb2",
+          "title": "Larry Ellison Steps Up His Bid to Help Paramount Pull Warner Bros. From Netflix"
+        },
+        {
+          "type": "article",
+          "pk": "id#688db1ded1e5d132",
+          "title": "Larry Ellison puts $40 billion behind Paramount's Warner Bros. bid"
+        }
+      ],
+      "time": [
+        452022,
+        502873
+      ]
+    },
+    {
+      "id": 14,
+      "speaker": "진행자",
+      "text": "이렇게 워너 브라더스를 둘러싼 몸값 경쟁이 헐리우드 지형을 흔들고 있는 한편, 오늘 장을 움직인 또 다른 축은 인공지능이었습니다. 특히 말씀하신 것처럼 인프라 투자 쪽에서 뉴스가 쏟아졌는데요, 이번에는 그 가운데 AI 인프라 투자 열풍과 선택적 기술주 랠리를 조금 더 들여다보겠습니다. 엔비디아와 알파벳 같은 대형 기술주가 다시 지수를 끌어올리면서 S&P 500과 나스닥이 사흘 연속 상승 흐름을 이어간 배경이기도 했죠.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#63d0fead8de5be90",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq rise for third straight day, gold hits record to extend 2025 rally"
+        },
+        {
+          "type": "chart",
+          "ticker": "^GSPC",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "^IXIC",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        503373,
+        532384
+      ]
+    },
+    {
+      "id": 15,
+      "speaker": "해설자",
+      "text": "네, 오늘 랠리의 중심은 인공지능이라는 큰 스토리 안에서도 특히 인프라 쪽에 있었습니다. 엔비디아 주가는 지난 금요일 181달러 안팎에서 오늘 184달러 가까이 마감해 1퍼센트대 중반 올랐고, 알파벳도 309달러대에서 311달러대로 1퍼센트 안팎 상승하면서 S&P 500과 나스닥을 받쳐 줬습니다. 여기에 미군과의 물류 AI 프로젝트 소식이 전해진 C3.ai와, 목표주가 상향과 내년 초 기술 전시회 기대가 겹친 사운드하운드 AI까지 각각 3퍼센트 안팎과 2퍼센트대 초반의 강세를 보이면서, 소프트웨어와 음성 AI 종목들이 인프라주와 함께 테마를 확산시키는 모습이었습니다. 다만 이런 몇몇 종목이 지수를 끌어올리는 구조라서, 지수는 잔잔해 보여도 실제로는 AI 관련 종목들 위주로 매우 선별적인 랠리가 이어지고 있다는 점을 함께 보실 필요가 있습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#58d7819b29889c83",
+          "title": "Exclusive-Nvidia aims to begin H200 chip shipments to China by mid-February, sources say"
+        },
+        {
+          "type": "article",
+          "pk": "id#ddaeb647540b3254",
+          "title": "Alphabet to buy data center firm Intersect in $4.75 billion deal amid AI push"
+        },
+        {
+          "type": "article",
+          "pk": "id#ee584e7fcd66a458",
+          "title": "C3.ai (AI) Stock Is Up, What You Need To Know"
+        },
+        {
+          "type": "article",
+          "pk": "id#4522e25761b03afa",
+          "title": "SoundHound AI (SOUN) Stock Is Up, What You Need To Know"
+        },
+        {
+          "type": "chart",
+          "ticker": "NVDA",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "GOOG",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "AI",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "SOUN",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "^GSPC",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "^IXIC",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        532884,
+        585615
+      ]
+    },
+    {
+      "id": 16,
+      "speaker": "진행자",
+      "text": "특히 엔비디아가 중국 고객을 대상으로 H200 칩을 내년 초부터 공급할 수 있다는 보도가 나오면서 관심이 컸는데요. 단순히 매출 하나 늘어나는 수준을 넘어 AI 인프라 지형 자체에 어떤 의미가 있는지 짚어 주시죠.",
+      "sources": [],
+      "time": [
+        586115,
+        601326
+      ]
+    },
+    {
+      "id": 17,
+      "speaker": "해설자",
+      "text": "이번 보도의 핵심은 엔비디아가 현재 자사 라인업에서 두 번째로 강력한 H200 칩을 설 연휴 이전인 내년 2월 중순까지 중국에 처음으로 공급하겠다는 계획을 중국 고객들에게 전달했다는 점입니다. 기존 재고를 활용해 모듈 기준 5천에서 1만개, 칩으로는 4만에서 8만개 수준을 먼저 보내고, 2026년 2분기부터는 추가 생산능력 주문을 받겠다는 구상인데, 미국 행정부가 25퍼센트 관세를 전제로 이 칩 수출을 허용하는 쪽으로 정책을 선회한 덕분입니다. 다만 아직 중국 정부의 승인과 세부 조건이 남아 있어 일정이 바뀔 수 있다는 단서가 붙었지만, 알리바바와 바이트댄스 같은 현지 빅테크들이 H20보다 훨씬 강력한 칩을 쓸 수 있는 길이 열릴 수 있다는 기대가 오늘 엔비디아 주가를 1퍼센트대 중반 끌어올렸고, AI 설비 투자가 단기간에 꺾이기 어렵다는 신호로 해석되면서 AI 관련주 전반의 투자 심리도 같이 지지해 주는 모습이었습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#58d7819b29889c83",
+          "title": "Exclusive-Nvidia aims to begin H200 chip shipments to China by mid-February, sources say"
+        },
+        {
+          "type": "chart",
+          "ticker": "NVDA",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        601826,
+        656557
+      ]
+    },
+    {
+      "id": 18,
+      "speaker": "진행자",
+      "text": "알파벳도 오늘 데이터 센터와 에너지 인프라 기업인 인터섹트를 47억 달러 넘는 가격에 인수하겠다고 나서면서 눈길을 끌었는데요. 이 거래가 보여주는 AI 인프라 투자 경쟁의 성격, 그리고 전력 문제는 어떻게 봐야 할까요.",
+      "sources": [],
+      "time": [
+        657057,
+        674508
+      ]
+    },
+    {
+      "id": 19,
+      "speaker": "해설자",
+      "text": "알파벳은 이미 지분을 들고 있던 인터섹트를 현금과 부채를 합쳐 약 47억 5천만 달러에 완전 인수해, 개발 중이거나 착공에 들어간 다수의 데이터 센터와 발전 프로젝트, 그리고 수 기가와트 규모의 전력 확보 계획을 통째로 가져오겠다고 밝혔습니다. 인터섹트는 인수 후에도 별도 브랜드로 운영되면서, 텍사스 해스켈 카운티에서 진행 중인 데이터 센터처럼 구글 전용 설비의 전력 공급을 맡고, 동시에 주민들의 전기요금 부담을 키우지 않도록 에너지원 다변화를 추진하는 역할을 맡게 됩니다. 이런 움직임은 오늘 알파벳 주가를 1퍼센트 안팎 끌어올렸을 뿐 아니라, 구글이 15년짜리 70억 달러 규모 AI 데이터 센터 임대 계약에 지급 보증을 서 주면서 주가가 10퍼센트대 중반 급등한 허트 에이트 사례처럼, 비트코인 채굴업체까지 디지털 인프라 플랫폼으로 전환시키는 촉매로 작용하고 있습니다. 결국 칩뿐 아니라 전력과 냉각, 부지 같은 물리적 인프라가 AI 시대의 병목이 되면서, 이 분야에 장기 계약을 확보한 기업들로 자금이 몰리는 전형적인 인프라 투자 싸이클이 전개되고 있다고 볼 수 있습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#ddaeb647540b3254",
+          "title": "Alphabet to buy data center firm Intersect in $4.75 billion deal amid AI push"
+        },
+        {
+          "type": "article",
+          "pk": "id#7dc44f830133144d",
+          "title": "Google's parent buys data center energy specialist Intersect for $4.75 billion to help power AI"
+        },
+        {
+          "type": "article",
+          "pk": "id#7c51feb8073b5e9f",
+          "title": "Google Wants More Energy to Fuel AI. It's Buying This Company to Help Power Its Data Centers."
+        },
+        {
+          "type": "article",
+          "pk": "id#0005cf4b0bc7ab94",
+          "title": "Hut 8’s AI data center deal is bigger than meets the eye: Benchmark lifts price target to $85"
+        },
+        {
+          "type": "chart",
+          "ticker": "GOOG",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "HUT",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        675008,
+        737779
+      ]
+    },
+    {
+      "id": 20,
+      "speaker": "진행자",
+      "text": "다만 이런 인프라 쪽 빅딜과 더불어 오늘은 C3.ai나 사운드하운드 AI 같은 순수 소프트웨어, 음성 AI 종목들도 함께 움직였는데요. 투자자들이 이쪽에서는 어떤 스토리를 보고 있는지, 또 그만큼 리스크는 없는지 짚어 주시죠.",
+      "sources": [],
+      "time": [
+        738279,
+        755690
+      ]
+    },
+    {
+      "id": 21,
+      "speaker": "해설자",
+      "text": "C3.ai는 미 육군과의 물류 계획용 인공지능 시스템 구축 협력 소식에 힘입어 3퍼센트 안팎 오르며 15달러 안팎으로 올라섰고, 사운드하운드 AI는 두 곳의 증권사가 일제히 매수 의견과 15달러 목표주가를 제시하면서 11달러대 초반에서 2퍼센트 넘게 상승했지만, 두 종목 모두 여전히 연초 대비로는 40퍼센트 이상 하락한 상태일 만큼 변동성이 큽니다. 이런 개별 호재에 따라 주가가 튀는 사이에, 인공지능 설비 투자를 따라잡기 위해 전 세계 기술기업들의 회사채 발행은 올해 4천2백억 달러를 넘기며 사상 최대를 기록했고, 미국 기술주의 발행만 3천4백억 달러 이상으로 레버리지 비율과 현금창출 대비 부채 부담이 빠르게 높아지고 있다는 분석도 나옵니다. 게다가 AI 랠리를 놓칠 수 없다는 기대와 거품일 수 있다는 불안이 공존하면서, 내년에도 AI 중심의 좁은 리더십과 큰 폭의 조정, 빠른 반등이 반복될 수 있다는 경고가 나오는 만큼, 지금의 선택적 기술주 랠리는 성장 스토리가 탄탄한 기업과 과도한 차입과 밸류에이션 부담을 안고 있는 기업을 가르는 옥석 가리기 국면으로 보시는 것이 합리적입니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#ee584e7fcd66a458",
+          "title": "C3.ai (AI) Stock Is Up, What You Need To Know"
+        },
+        {
+          "type": "article",
+          "pk": "id#4522e25761b03afa",
+          "title": "SoundHound AI (SOUN) Stock Is Up, What You Need To Know"
+        },
+        {
+          "type": "article",
+          "pk": "id#b98e117f121d9fdc",
+          "title": "AI spending spree drives global tech debt issuance to record high"
+        },
+        {
+          "type": "article",
+          "pk": "id#63d0fead8de5be90",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq rise for third straight day, gold hits record to extend 2025 rally"
+        },
+        {
+          "type": "chart",
+          "ticker": "AI",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "SOUN",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        756190,
+        818081
+      ]
+    },
+    {
+      "id": 22,
+      "speaker": "진행자",
+      "text": "이런 인공지능과 미디어를 둘러싼 위험자산 랠리의 뒤에는 결국 통화정책이라는 공통 분모가 깔려 있는데요. 시카고 연은 지수가 예상보다 덜 나빴고, 연준 스티븐 미란 이사가 추가 금리 인하가 없으면 경기 침체 위험이 커질 수 있다고 경고했다는 점을 짚어 주셨죠. 이 두 가지가 합쳐져서 시장이 연준의 완화 기조를 어떻게 해석하고 있는지, 통화정책 그림부터 조금 더 풀어 주시죠.",
+      "sources": [],
+      "time": [
+        818581,
+        844352
+      ]
+    },
+    {
+      "id": 23,
+      "speaker": "해설자",
+      "text": "오늘 시카고 연은 전국 활동지수는 마이너스 0.21로 나왔는데, 전달 마이너스 0.31보다 나아졌고 시장이 예상했던 마이너스 0.40보다는 덜 부진했습니다. 즉 경기는 둔화 국면이지만 급락은 아니라는 신호가 나온 셈이고요. 여기에 연준 이사 스티븐 미란이 한 방송 인터뷰에서 9월 이후 세 차례에 걸쳐 기준금리를 총 0.75퍼센트포인트 내렸음에도, 내년에도 추가로 금리를 더 내리지 않으면 실업률 상승이 본격적인 경기 침체로 번질 수 있다고 경고했습니다. 그는 당장 심각한 침체를 보진 않지만 실업률이 예상보다 더 올라간 만큼 통화정책을 더 완화하는 쪽으로 움직여야 한다고 강조했고, 실제로 시장에서는 이런 발언과 최근 물가 둔화를 근거로 2026년에만 두 차례 추가 인하 가능성을 가격에 반영하고 있습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#d0ecec4221554aa9",
+          "title": "Fed Risks Recession Without More Interest Rate Cuts, Miran Says"
+        },
+        {
+          "type": "article",
+          "pk": "id#9e4894ca63cd8d66",
+          "title": "Gold Rises to Record High on Rate-Cut Bets and Venezuela Tension"
+        },
+        {
+          "type": "event",
+          "id": "386011",
+          "title": "chicago fed national activity index",
+          "date": "2025-12-22"
+        }
+      ],
+      "time": [
+        844852,
+        892103
+      ]
+    },
+    {
+      "id": 24,
+      "speaker": "진행자",
+      "text": "그 연준의 완화 기대가 금 가격에는 불을 붙이고 있습니다. 아까 온스당 4400달러 중반, 사상 최고 수준이라고 짚어 주셨는데, 실제로 오늘 하루 얼마나 오른 건지, 또 왜 이렇게까지 강세가 나오는지 구체적으로 설명해 주시겠어요.",
+      "sources": [],
+      "time": [
+        892603,
+        909294
+      ]
+    },
+    {
+      "id": 25,
+      "speaker": "해설자",
+      "text": "가격만 놓고 보면 금 선물 기준으로 지난 금요일 종가가 온스당 약 4360달러였는데 오늘은 4440달러 중반에서 마감해 하루 만에 거의 80달러, 약 2퍼센트 가까이 뛰었습니다. 장중에는 4400달러 후반까지 올라서 10월에 세웠던 이전 고점을 넘겼고, 올해 들어서만 거의 70퍼센트 오른 상태인데 연중에만 수십 차례 사상 최고가를 갈아치웠다는 통계도 나와 있습니다. 배경을 보면 첫째로는 말씀드린 대로 연준이 이미 세 차례 금리를 내린 데 이어 2026년에 두 번 정도 추가 인하를 할 것이라는 기대가 커지면서, 이자를 주지 않는 금의 기회비용이 크게 낮아졌고 미국 달러 가치에 대한 헤지 수요가 붙었습니다. 둘째로는 미국이 베네수엘라산 원유 운송선을 잇따라 나포하고 우크라이나가 러시아의 이른바 그림자 유조선을 공격하는 등 지정학적 긴장이 높아지면서 안전자산 선호가 강해졌고, 여기에 각국 중앙은행과 상장지수펀드 자금이 현물 금을 꾸준히 사들이면서 금과 은 모두 40여 년 만에 최고의 연간 수익률을 향해 가고 있습니다.",
+      "sources": [
+        {
+          "type": "chart",
+          "ticker": "GC=F",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "article",
+          "pk": "id#9e4894ca63cd8d66",
+          "title": "Gold Rises to Record High on Rate-Cut Bets and Venezuela Tension"
+        },
+        {
+          "type": "article",
+          "pk": "id#246791658b5651f9",
+          "title": "Gold, silver hit record highs as precious metals pace toward best year since 1979"
+        }
+      ],
+      "time": [
+        909794,
+        976685
+      ]
+    },
+    {
+      "id": 26,
+      "speaker": "진행자",
+      "text": "흥미로운 점은 이렇게 안전자산이 날아가는데도 S&P와 나스닥 같은 주식 지수도 사상 최고권에서 선별 랠리를 이어가고 있다는 겁니다. 위험자산과 안전자산이 동시에 강세를 보이는 이 독특한 조합을 투자 심리 차원에서 어떻게 봐야 할까요.",
+      "sources": [],
+      "time": [
+        977185,
+        993476
+      ]
+    },
+    {
+      "id": 27,
+      "speaker": "해설자",
+      "text": "오늘만 놓고 보면 S&P 500 지수는 어제보다 0.6퍼센트 안팎, 나스닥은 0.5퍼센트 정도 오르면서 사흘 연속 상승했고, 동시에 금은 4400달러 중반, 은은 온스당 60달러 후반에서 마감해 둘 다 사상 최고 수준을 다시 썼습니다. 이는 연준이 이미 세 차례 금리를 내리고 추가 인하 기대까지 겹치면서 유동성이 풍부해진 환경에서, 성장성이 높은 인공지능과 미디어 빅딜 관련 종목에는 공격적으로 베팅을 하되 지정학적 긴장과 통화가치 희석에 대한 불안 때문에 금과 은 같은 실물 안전자산을 적극적으로 담는 이중 전략이 동시에 작동하고 있다는 뜻입니다. 실제로 미국 증시에서는 대형 기술주와 인공지능 인프라 관련주, 워너 브라더스 디스커버리 같은 이벤트 종목이 지수를 끌어올리는 한편, 귀금속 시장에서는 금이 연초 대비 70퍼센트 가까이, 은이 두 배 이상 오르면서 1979년 이후 가장 강한 한 해를 보내고 있고, 비트코인 같은 암호화폐는 같은 인플레이션 헤지 자산임에도 금만큼의 신뢰를 얻지 못해 상대적으로 부진하다는 분석이 나옵니다. 요약하면 지금은 금리 인하라는 공통된 모멘텀 아래 한쪽에서는 인공지능과 빅테크에 대한 탐욕이, 다른 한쪽에서는 귀금속을 통한 리스크 헤지가 동시에 강화되는 상황으로 보시면 되겠습니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#63d0fead8de5be90",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq rise for third straight day, gold hits record to extend 2025 rally"
+        },
+        {
+          "type": "article",
+          "pk": "id#0fb46df20adf7730",
+          "title": "Stock market today: Nasdaq, S&P 500, Dow rise as tech recovers, while gold climbs to record high"
+        },
+        {
+          "type": "article",
+          "pk": "id#246791658b5651f9",
+          "title": "Gold, silver hit record highs as precious metals pace toward best year since 1979"
+        },
+        {
+          "type": "article",
+          "pk": "id#8b0990c94ff8f41f",
+          "title": "Crypto prices again muted as gold surges to new record, U.S. stocks advance"
+        },
+        {
+          "type": "chart",
+          "ticker": "^GSPC",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "SI=F",
+          "start_date": "2025-12-19",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        993976,
+        1069547
+      ]
+    },
+    {
+      "id": 28,
+      "speaker": "진행자",
+      "text": "결국 연준의 완화 기조와 지정학 리스크가 동시에 귀금속 랠리를 키우고 있는 그림인데, 이미 이렇게 많이 오른 뒤에 금이나 은에 지금이라도 올라타야 할지, 아니면 거품을 경계해야 할지 고민되실 것 같습니다. 투자 전략까지 단정할 수는 없겠지만, 현재 레벨을 어떻게 해석하는 게 합리적일까요.",
+      "sources": [],
+      "time": [
+        1070047,
+        1091178
+      ]
+    },
+    {
+      "id": 29,
+      "speaker": "해설자",
+      "text": "올해 금은 70퍼센트 안팎, 은은 130퍼센트 이상 뛰어 1979년 이후 가장 가파른 상승을 기록 중이라 단기적으로는 과열 구간에 들어섰다는 경고도 분명히 나오고 있습니다. 일부 글로벌 투자은행들은 중앙은행의 꾸준한 매수와 낮은 실질금리를 근거로 2026년까지 금 가격이 4500달러에서 4900달러대까지 더 오를 수 있다는 구조적으로 긍정적인 전망을 내놓지만, 다른 원자재 전략가들은 1979년 급등 이후 금 가격이 2년 만에 절반 가까이 떨어졌던 사례를 상기시키면서 지금처럼 가격이 많이 늘어났을 때에는 수익 실현과 변동성 확대를 동시에 염두에 두라고 조언합니다. 또 한 상장지수펀드 운용사는 미국의 대규모 재정적자와 이른바 공짜돈 지급 구상, 기준금리 추가 인하 기대가 달러 가치를 서서히 깎아 먹는 만큼 중장기 포트폴리오에서 현금이나 국채의 일부를 금으로 대체하는 전략이 유효할 수 있지만, 이 역시 서서히 비중을 조정하는 방식이어야 하고 단기 추격 매수에는 항상 조정 리스크가 따른다고 강조했습니다. 정리하면 연준의 완화 기조와 재정 확장, 지정학 리스크가 겹치며 귀금속의 중장기 펀더멘털은 강해졌지만, 올해만 70퍼센트 넘게 오른 가격 수준에서는 헤지 수단이라는 본래 목적을 잊지 않고 자신이 감내할 수 있는 변동성 범위 안에서 단계적으로 접근하는 게 필요해 보입니다.",
+      "sources": [
+        {
+          "type": "article",
+          "pk": "id#246791658b5651f9",
+          "title": "Gold, silver hit record highs as precious metals pace toward best year since 1979"
+        },
+        {
+          "type": "article",
+          "pk": "id#0e0f15b52a29b873",
+          "title": "Chaos, cheap money, and a collapse in crypto send gold up 69% for the year, hitting a new record high"
+        }
+      ],
+      "time": [
+        1091678,
+        1175089
+      ]
+    },
+    {
+      "id": 30,
+      "speaker": "진행자",
+      "text": "이제 지수와 섹터, 빅딜 이슈를 폭넓게 짚어본 만큼, 개별 종목 가운데 투자자 관심이 특히 높은 기업도 하나 살펴보겠습니다. 이어서 비만 치료제 대표주죠, 일라이 릴리 살펴보겠습니다. 오늘 장중에는 시가가 1076.72달러, 저가가 1063달러, 고가는 1083.48달러였고, 종가는 1076.11달러로 사실상 보합, 하루 변동이 마이너스 0.06퍼센트에 그친 아주 잔잔한 흐름이었는데요.",
+      "sources": [
+        {
+          "type": "chart",
+          "ticker": "LLY",
+          "start_date": "2025-12-22",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        1176089,
+        1207620
+      ]
+    },
+    {
+      "id": 31,
+      "speaker": "해설자",
+      "text": "네, 오늘 intraday만 놓고 보면 1063달러까지 눌렸다가 다시 1070달러대 중반으로 올라오는, 1퍼센트 남짓 박스 안에서 매수와 매도가 공방을 벌인 전형적인 고가권 숨 고르기 패턴이었습니다. 11월 22일부터 한 달 동안을 넓게 봐도 주가가 1000달러를 훌쩍 넘긴 뒤 1076.48달러 수준에서 조용한 강세를 이어가고 있어서, 단기 방향성 베팅보다는 기관 중심의 홀딩 기조가 지배적인 상황으로 해석할 수 있습니다.",
+      "sources": [
+        {
+          "type": "chart",
+          "ticker": "LLY",
+          "start_date": "2025-11-22",
+          "end_date": "2025-12-22"
+        },
+        {
+          "type": "chart",
+          "ticker": "LLY",
+          "start_date": "2025-12-22",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        1208120,
+        1239131
+      ]
+    },
+    {
+      "id": 32,
+      "speaker": "진행자",
+      "text": "가격은 이렇게 고점 근처에서 조용히 버티고 있는데, 결국 투자자들이 궁금한 건 이 레벨에서 일라이 릴리를 더 사야 할지, 들고만 가야 할지일 것 같습니다. 먼저 비즈니스와 재무 구조부터, GLP1 비만약이 얼마나 회사의 중심이 됐는지부터 짚어 주시죠.",
+      "sources": [],
+      "time": [
+        1239631,
+        1256922
+      ]
+    },
+    {
+      "id": 33,
+      "speaker": "해설자",
+      "text": "공시를 보면 일라이 릴리는 Mounjaro, Zepbound, Trulicity, Jardiance 같은 인크레틴 기반 비만·당뇨 치료제가 제품별 매출 표의 최상단을 사실상 독식하면서 성장의 거의 전부를 이끌고 있습니다. 이 수요를 맞추기 위해 2024년 한 해 CAPEX만 50억달러를 넘기고, 2024년 말 총부채 약 336억달러에서 2025년 3분기에는 425억달러 수준까지 레버리지를 끌어올려 생산능력과 파이프라인에 공격적으로 투자하고 있는 구조인데요, 비만·대사질환·심혈관 등으로 이어지는 GLP1 플랫폼 덕분에 빅파마 가운데서도 성장성은 최상급이지만, 동시에 회사의 이익과 밸류에이션이 한 플랫폼에 강하게 레버리지되어 있다는 점도 분명합니다. 여기에 항암제와 면역질환, 알츠하이머 등 비 GLP1 포트폴리오와 M&A 자산이 있지만, 10K와 10Q를 보면 아직 전사 EPS에서 차지하는 비중은 GLP1만큼 크지 않은 것으로 읽힙니다.",
+      "sources": [
+        {
+          "type": "sec_filing",
+          "ticker": "LLY",
+          "form": "10-K",
+          "filed_date": "2025-02-19",
+          "accession_number": "0000059478-25-000067"
+        },
+        {
+          "type": "sec_filing",
+          "ticker": "LLY",
+          "form": "10-Q",
+          "filed_date": "2025-10-30",
+          "accession_number": "0000059478-25-000254"
+        }
+      ],
+      "time": [
+        1257422,
+        1316793
+      ]
+    },
+    {
+      "id": 34,
+      "speaker": "진행자",
+      "text": "성장성은 분명한데, 문제는 가격이겠죠. 지금 1000달러를 훌쩍 넘긴 밸류에이션이 과연 정당화되느냐인데, 토론에서는 보수적 시나리오와 낙관적 시나리오를 나눠 EPS와 멀티플을 쭉 따져봤습니다. 그 결과를 정리해 주신다면요.",
+      "sources": [],
+      "time": [
+        1317293,
+        1335024
+      ]
+    },
+    {
+      "id": 35,
+      "speaker": "해설자",
+      "text": "2030년까지를 두고 보수, 기준, 낙관 세 가지 시나리오를 그려 보면 그림이 꽤 분명해집니다. 보수적으로는 규제와 경쟁 탓에 GLP1 성장률과 마진이 빠르게 둔화돼 2030년 EPS를 30달러, FCF를 28달러 정도로 보고 빅파마 평균 수준인 PER 18에서 22배를 적용하면 적정 주가는 540에서 660달러 정도, 지금 1076달러와 비교하면 40퍼센트에서 50퍼센트 넘는 하방이 열려 있는 셈입니다. 기준 시나리오에서는 GLP1 리더십을 유지해 2030년 EPS 50달러, FCF 48달러, PER 22에서 26배를 가정하면 대략 1100에서 1300달러 밴드가 나와서, 지금 가격은 마이너스 한 자릿수에서 플러스 20퍼센트 사이, 업사이드와 다운사이드가 비슷한 중립 구간에 가깝고요. 낙관 시나리오, 그러니까 비만과 심혈관, NASH까지 플랫폼이 크게 성공해 EPS가 65달러, FCF 62달러에 PER 26에서 32배까지 받는 경우에는 1700달러 안팎, 대략 40에서 70퍼센트 업사이드가 열리지만, 이 방향에 베팅하려면 규제와 안전성, 경쟁 리스크가 상당 기간 조용하다는 꽤 공격적인 가정을 깔아야 합니다.",
+      "sources": [
+        {
+          "type": "sec_filing",
+          "ticker": "LLY",
+          "form": "10-K",
+          "filed_date": "2025-02-19",
+          "accession_number": "0000059478-25-000067"
+        },
+        {
+          "type": "sec_filing",
+          "ticker": "LLY",
+          "form": "10-Q",
+          "filed_date": "2025-10-30",
+          "accession_number": "0000059478-25-000254"
+        }
+      ],
+      "time": [
+        1335524,
+        1410214
+      ]
+    },
+    {
+      "id": 36,
+      "speaker": "진행자",
+      "text": "결국 쟁점은 이 리스크의 확률과 크기일 텐데요, 약가 규제나 GLP1 안전성, 경쟁 심화 같은 변수가 현실화됐을 때 주가 조정 폭이 얼마나 될 수 있는지, 또 지금 구간의 투자 심리는 어떤 상태라고 보십니까.",
+      "sources": [],
+      "time": [
+        1410714,
+        1426605
+      ]
+    },
+    {
+      "id": 37,
+      "speaker": "해설자",
+      "text": "10K와 10Q의 리스크 섹션을 보면 IRA와 340B 같은 미국 약가 규제, Jardiance를 포함한 가격 협상, 인슐린과 GLP1 관련 소송, 특허 도전까지 굉장히 긴 리스트가 반복해서 언급되고 있어서, 이게 이론적 리스크가 아니라 이미 제도화가 진행 중인 위험이라는 점을 알 수 있습니다. 토론에서는 규제에 따른 약가 10에서 30퍼센트 인하와 볼륨 증가를 조합한 시나리오, 그리고 GLP1 계열에 class wide 안전성 이슈나 대형 합의가 붙는 시나리오, 여기에 노보 등 경쟁사의 신약과 경구제 경쟁이 겹치는 경우를 따로 계산해 봤는데, 중간만 가도 EPS가 20에서 30퍼센트 줄고 멀티플이 30배 안팎으로 정상화되면서 주가가 35에서 45퍼센트, 안전성과 소송까지 겹치면 60퍼센트 이상 조정될 수 있다는 결과가 나옵니다. 이런 구조인데도 최근 한 달 동안 1000달러 위에서 1076달러 부근을 저변동 박스권으로 버티고 있다는 건, 리스크를 모르기 때문이 아니라 알면서도 GLP1 성장 스토리에 올라탄 롱 포지션이 과밀하게 쌓인, 전형적인 crowded long 구간이라는 뜻이고요. 그래서 네 명 중 세 명의 결론은, 비즈니스는 훌륭하지만 이 가격대에서는 안전마진이 부족해 신규 매수는 피하고 기존 보유자도 비중을 줄이는 쪽, 액션으로는 SELL에 가깝다고 정리했습니다.",
+      "sources": [
+        {
+          "type": "sec_filing",
+          "ticker": "LLY",
+          "form": "10-K",
+          "filed_date": "2025-02-19",
+          "accession_number": "0000059478-25-000067"
+        },
+        {
+          "type": "sec_filing",
+          "ticker": "LLY",
+          "form": "10-Q",
+          "filed_date": "2025-10-30",
+          "accession_number": "0000059478-25-000254"
+        },
+        {
+          "type": "chart",
+          "ticker": "LLY",
+          "start_date": "2025-11-22",
+          "end_date": "2025-12-22"
+        }
+      ],
+      "time": [
+        1427105,
+        1510036
+      ]
+    },
+    {
+      "id": 38,
+      "speaker": "진행자",
+      "text": "오늘 장 마감까지 지수와 주요 종목, 그리고 채권과 환율 흐름을 함께 짚어봤는데요, 전체적인 그림을 한 번 더 정리해 주시면 좋겠습니다. 투자자들이 기억해둘 만한 핵심 메시지부터 짚어볼까요.",
+      "sources": [],
+      "time": [
+        1511036,
+        1524487
+      ]
+    },
+    {
+      "id": 39,
+      "speaker": "해설자",
+      "text": "오늘 이야기의 축은 결국 실적과 연준, 그리고 연말 유동성 세 가지로 모아볼 수 있습니다. 앞서 살펴본 것처럼 개별 지수와 주요 성장주, 경기민감주가 제각각 다른 반응을 보였고, 그 배경에는 향후 금리 경로에 대한 시장의 기대와 부담이 동시에 작용하고 있습니다. 기업 실적에 대해서는 업종과 기업별로 눈높이 조정이 계속되는 가운데, 앞으로 나올 거시 지표가 이익 추정치와 밸류에이션을 다시 흔들 수 있다는 점도 확인했습니다. 결국 오늘 장 움직임은 내년 상반기 경기와 물가, 그리고 연준 정책을 미리 가격에 반영해 가는 과정으로 보는 게 타당해 보입니다.",
+      "sources": [],
+      "time": [
+        1524987,
+        1563598
+      ]
+    },
+    {
+      "id": 40,
+      "speaker": "진행자",
+      "text": "이제는 앞으로 일정이 더 중요해지는 구간인 만큼, 가장 가까운 경제 지표들부터 짚어볼까요. 단기적으로 시장이 특히 민감하게 반응할 만한 지표가 어떤 것들인지 궁금합니다.",
+      "sources": [],
+      "time": [
+        1564098,
+        1576189
+      ]
+    },
+    {
+      "id": 41,
+      "speaker": "해설자",
+      "text": "우선 12월 23일에 발표되는 국내총생산 성장률과 근원 개인소비지출 물가, 그리고 내구재 주문 지표가 한꺼번에 나온다는 점이 중요합니다. 국내총생산 성장률은 최근 분기보다 한층 높은 속도를 보이며 예상을 상회한 반면, 근원 개인소비지출 물가는 시장 예상 수준으로 올라온 상태라 성장과 물가의 조합이 연준의 인내심을 시험할 수 있는 구간입니다. 여기에 내구재 주문이 전월 플러스에서 마이너스로 크게 꺾인 모습이라, 투자와 설비 사이클이 피크아웃 신호를 주는지 확인하려는 시장의 경계감도 커질 수 있습니다. 이어 12월 30일 공개되는 연방공개시장위원회 의사록에서는 연준이 최근 강한 성장 데이터를 어떻게 해석했는지, 그리고 내년 금리 인하 경로를 둘러싼 위원들 간의 온도 차이를 다시 한번 점검하는 자리가 될 것입니다.",
+      "sources": [
+        {
+          "type": "event",
+          "id": "387585",
+          "title": "gdp growth rate qoq",
+          "date": "2025-12-23"
+        },
+        {
+          "type": "event",
+          "id": "387575",
+          "title": "core pce prices qoq",
+          "date": "2025-12-23"
+        },
+        {
+          "type": "event",
+          "id": "387589",
+          "title": "durable goods orders mom",
+          "date": "2025-12-23"
+        },
+        {
+          "type": "event",
+          "id": "391129",
+          "title": "fomc minutes",
+          "date": "2025-12-30"
+        }
+      ],
+      "time": [
+        1576689,
+        1626300
+      ]
+    },
+    {
+      "id": 42,
+      "speaker": "진행자",
+      "text": "연말을 지나 새해 초에는 실물과 고용을 가늠할 지표들이 줄줄이 대기하고 있죠. 특히 경기의 방향성을 보는 투자자 입장에서 어떤 발표를 눈여겨봐야 할까요.",
+      "sources": [],
+      "time": [
+        1626800,
+        1637891
+      ]
+    },
+    {
+      "id": 43,
+      "speaker": "해설자",
+      "text": "새해 첫 주에는 제조업과 서비스업의 구분이 중요해집니다. 제조업 경기의 바닥을 가늠할 수 있는 제조업 구매관리자 지수와, 미국 경제 비중이 큰 서비스업을 보여주는 서비스업 지수가 함께 나오기 때문에, 침체 우려가 잦아들지 아니면 다시 고개를 드는지 투자심리의 방향을 가를 수 있습니다. 같은 주에 발표되는 구인공고 통계는 일자리 공석 수를 통해 기업이 앞으로 사람을 더 뽑을 여력이 있는지를 보여주기 때문에, 임금과 서비스 물가가 얼마나 끈질기게 남을지를 연준이 판단하는 핵심 단서가 됩니다. 그 다음 주에 예정된 비농업 부문 고용과 실업률 지표는 여전히 가장 강력한 시장 재료로, 고용이 예상보다 강하면 성장주와 장기채에 부담이 될 수 있고, 반대로 예상보다 빠르게 식으면 경기 둔화 우려가 부각되면서 방어주나 품질주로 자금이 이동할 수 있습니다.",
+      "sources": [
+        {
+          "type": "event",
+          "id": "394700",
+          "title": "ism manufacturing pmi",
+          "date": "2026-01-05"
+        },
+        {
+          "type": "event",
+          "id": "394717",
+          "title": "ism services pmi",
+          "date": "2026-01-07"
+        },
+        {
+          "type": "event",
+          "id": "398105",
+          "title": "jolts job openings",
+          "date": "2026-01-07"
+        },
+        {
+          "type": "event",
+          "id": "394686",
+          "title": "non farm payrolls",
+          "date": "2026-01-09"
+        },
+        {
+          "type": "event",
+          "id": "394688",
+          "title": "unemployment rate",
+          "date": "2026-01-09"
+        }
+      ],
+      "time": [
+        1638391,
+        1687762
+      ]
+    },
+    {
+      "id": 44,
+      "speaker": "진행자",
+      "text": "결국 물가와 연준이 내년 상반기 시장을 좌우할 것 같은데요, 인플레이션 지표들과 기준금리 결정은 어떻게 연결해서 봐야 할지, 그리고 투자자 입장에서는 어떤 마음가짐이 필요할지 정리해 주시죠.",
+      "sources": [],
+      "time": [
+        1688262,
+        1702553
+      ]
+    },
+    {
+      "id": 45,
+      "speaker": "해설자",
+      "text": "1월 중순에 예정된 소비자물가와 근원 물가 발표는 연준이 보는 물가 흐름의 큰 그림을 다시 그려보는 계기가 될 것입니다. 이후 연준 회의에서 기준금리가 동결될 것으로 예상되지만, 회의 직후 기자회견에서 내년 인하 속도와 폭에 대한 힌트를 어떻게 주느냐가 주식과 채권, 달러의 방향성을 한 번 더 흔들 수 있습니다. 바로 다음 날 발표되는 근원 개인소비지출 물가지수는 연준이 공식적으로 가장 선호하는 물가지표인 만큼, 시장이 세밀하게 수치를 따지며 기대 인플레이션과 실질금리를 다시 계산하게 될 것입니다. 이런 일정들이 겹치는 구간일수록 단기 뉴스에 흔들리기보다는 자신만의 리스크 관리 원칙을 점검하고, 포트폴리오 전체의 균형을 유지하는 것이 중요하다는 점을 마지막으로 말씀드리겠습니다, 지금까지 12월 22일 장마감 브리핑이었습니다. 감사합니다.",
+      "sources": [
+        {
+          "type": "event",
+          "id": "398497",
+          "title": "inflation rate yoy",
+          "date": "2026-01-13"
+        },
+        {
+          "type": "event",
+          "id": "398528",
+          "title": "core inflation rate yoy",
+          "date": "2026-01-13"
+        },
+        {
+          "type": "event",
+          "id": "390597",
+          "title": "fed interest rate decision",
+          "date": "2026-01-28"
+        },
+        {
+          "type": "event",
+          "id": "390598",
+          "title": "fed press conference",
+          "date": "2026-01-28"
+        },
+        {
+          "type": "event",
+          "id": "399155",
+          "title": "core pce price index mom",
+          "date": "2026-01-29"
+        }
+      ],
+      "time": [
+        1703053,
+        1753424
+      ]
+    }
+  ]
+}

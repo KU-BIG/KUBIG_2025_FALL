@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  /* Background */
+  --bg-primary: #f6f6f6;
+  --bg-card: #ffffff;
+
+  /* Text */
+  --text-primary: #000000;
+  --text-secondary: rgba(0, 0, 0, 0.7);
+  --text-muted: rgba(0, 0, 0, 0.5);
+
+  /* Border */
+  --border-default: #000000;
+  --border-muted: rgba(0, 0, 0, 0.5);
+
+  /* Player */
+  --seekbar-bg: rgba(0, 0, 0, 0.3);
+  --seekbar-progress: rgba(0, 0, 0, 0.7);
+  --button-play-bg: #000000;
+}
+
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-card: var(--bg-card);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border-default: var(--border-default);
+  --color-border-muted: var(--border-muted);
+  --font-suit: var(--font-suit);
+  --font-serif: "CMU Classical Serif", serif;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-suit), "SUIT Variable", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+/* Title font */
+.font-title {
+  font-family: "CMU Classical Serif", serif;
+  font-style: italic;
+}
+
+/* SUIT font weights */
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* View Transitions - Push Animation */
+@keyframes slide-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-to-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Spring-like easing (approximation of stiffness:80, damping:20, mass:1) */
+/* Default: slide from right (forward navigation) */
+::view-transition-old(root) {
+  animation: slide-to-left 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+::view-transition-new(root) {
+  animation: slide-from-right 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* Back navigation: slide from left */
+html[data-direction="back"]::view-transition-old(root) {
+  animation: slide-to-right 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+html[data-direction="back"]::view-transition-new(root) {
+  animation: slide-from-left 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
