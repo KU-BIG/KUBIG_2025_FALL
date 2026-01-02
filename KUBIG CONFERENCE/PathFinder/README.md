@@ -210,3 +210,9 @@ chainlit run chainlit_app.py
 # Watch 모드 (코드 수정 시 자동 재시작)
 chainlit run chainlit_app.py -w
 ```
+
+---
+
+## 📺 Demo Video
+
+[![PathFinder Demo Video](http://img.youtube.com/vi/o9kplttEQVg/maxresdefault.jpg)](https://youtu.be/o9kplttEQVg)
